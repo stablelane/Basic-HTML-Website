@@ -11,12 +11,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 300px;
+    
     min-height: 100dvh;
     margin: 0;
 }
 
 .container {
+    min-width: 600px;
     max-width: 710px;
     width: 80%;
     border: 3px solid black;
@@ -57,6 +58,13 @@ nav>ul {
     display: flex;
     list-style: none;
     gap: 15px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .hero {
@@ -105,6 +113,9 @@ a {
     font-weight: 500;
     font-size: 0.8em;
 }
+a{
+    color: rgb(22, 133, 153);
+}
 
 .projects,
 .education,
@@ -140,6 +151,7 @@ a {
 .cards h3,
 p {
     font-size: 0.8em;
+    margin-top: 0;
 }
 
 .cards p {
@@ -161,4 +173,18 @@ footer {
 
 footer h2 {
     font-size: 1em;
+}
+.contact {
+    position: relative;
+    max-width: 710px;
+    width: 340%;
+    border-bottom: 1px solid black;
+    
+}
+.contact label, .contact input , .contact button {
+    display: block;
+    margin: 1em;
+}
+.contact button{
+    margin-bottom: 4em;
 }
